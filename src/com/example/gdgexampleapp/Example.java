@@ -85,9 +85,9 @@ public class Example extends FragmentActivity implements ActionBar.TabListener {
 		case 3:
 			return new DrawFragment();
 		default:
-			Fragment f=new DummySectionFragment();
+			Fragment f=new ClickFragment();
 			Bundle args = new Bundle();
-			args.putCharSequence(DummySectionFragment.ARG,"Hello World!");
+			args.putCharSequence(ClickFragment.ARG,"Hello World!");
 			f.setArguments(args);
 			return f;
 		}
